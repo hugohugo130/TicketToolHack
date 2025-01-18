@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Ticket Tool Hack",
+    "description": "一個適用於Ticket Tool的插件",
+    "version": "1.0.0",
+    "icons": {
+        "16": "icon.ico",
+        "48": "icon.ico",
+        "128": "icon.ico"
+    },
+    "action": {
+        "default_icon": "icon.ico",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://tickettool.xyz/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
